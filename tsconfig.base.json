@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@tourism/contracts": ["./packages/contracts/src/index.ts"],
+      "@tourism/contracts/*": ["./packages/contracts/src/*"],
+      "@tourism/validation": ["./packages/validation/src/index.ts"],
+      "@tourism/validation/*": ["./packages/validation/src/*"],
+      "@tourism/config": ["./packages/config/src/index.ts"],
+      "@tourism/config/*": ["./packages/config/src/*"],
+      "@tourism/ui": ["./packages/ui/src/index.tsx"],
+      "@tourism/ui/*": ["./packages/ui/src/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist", ".next", "build", "coverage"]
+}

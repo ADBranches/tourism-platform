@@ -1,0 +1,6 @@
+{
+  "name": "Global Tourism Platform",
+  "description": "Enterprise end-to-end tourism platform monorepo baseline and architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
